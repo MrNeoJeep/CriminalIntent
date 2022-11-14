@@ -27,21 +27,5 @@ public class CrimeActivity extends SingleFragmentActivity{
         return intent;
     }
 
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_main);
-//        UUID crimeId = (UUID) getIntent().getSerializableExtra("crimeid");
-//        FragmentManager fm = getSupportFragmentManager();
-//        Fragment fragment = fm.findFragmentById(R.id.fragment_container);
-//        if (fragment == null) {
-//            fragment = CrimeFragment.newInstance(crimeId);
-////            fragment = CrimeListFragment.newInstance("p1","p2");
-//            fm.beginTransaction()
-//                    .add(R.id.fragment_container, fragment)
-//                    .commit();
-//
-//        }
-//
-//    }
+
 }

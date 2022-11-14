@@ -75,7 +75,7 @@ public class CrimeListFragment extends Fragment {
 
         mCrimeRecyclerView = v.findViewById(R.id.crime_recycler_view);
         mCrimeRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-        updateUI();
+
         mCrimeLab = CrimeLab.get(getActivity());
         mCrimeAdapter = new CrimeAdapter(mCrimeLab.getCrimes());
         mCrimeRecyclerView.setAdapter(mCrimeAdapter);
@@ -125,12 +125,7 @@ public class CrimeListFragment extends Fragment {
             mTitle.setText(mCrime.getmTitle());
             mDate.setText(mCrime.getmDate().toString());
         }
-//        public void onClick(View view){
-//            Toast.makeText(getActivity(),
-//                    mCrime.getmTitle()+"clicked!",Toast.LENGTH_SHORT).show();
-//            Intent intent = new Intent(getActivity(),CrimeActivity.class);
-//            startActivity(intent);
-//        }
+
 
     }
     private class CrimeAdapter extends RecyclerView.Adapter<CrimeHolder>{
